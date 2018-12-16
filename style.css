@@ -1,0 +1,17 @@
+
+body {
+  font-family: UntitledSansWeb,UntitledSans,Helvetica,Arial,sans-serif;
+}
+
+a {
+  color: #00f;
+}
+
+#main {
+  margin: 100px;
+}
+
+#main > div {
+  line-height: 150%;
+}
+
