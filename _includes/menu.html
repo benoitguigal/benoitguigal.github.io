@@ -1,17 +1,23 @@
-
 <div id="menu">
   <p>
     {% if page.title == "about" %}
-    — <a href="/about" class="is-uppercase is-active">About</a>
+    — <a href="/about" class="is-uppercase is-active">À Propos</a>
     {% else %}
-    — <a href="/about" class="is-uppercase">About</a>
+    — <a href="/about" class="is-uppercase">À Propos</a>
+    {% endif %}
+  </p>
+  <p>
+    {% if page.title == "skills" %}
+    — <a href="/skills" class="is-uppercase is-active">Compétences</a>
+    {% else %}
+    — <a href="/skills" class="is-uppercase">Compétences</a>
     {% endif %}
   </p>
   <p>
     {% if page.title == "work" %}
-    — <a href="/work" class="is-uppercase is-active">Work</a>
+    — <a href="/work" class="is-uppercase is-active">Expériences</a>
     {% else %}
-    — <a href="/work" class="is-uppercase">Work</a>
+    — <a href="/work" class="is-uppercase">Expériences</a>
     {% endif %}
   </p>
   <p>
@@ -25,4 +31,3 @@
     {% endif %}
   </p>
 </div>
-

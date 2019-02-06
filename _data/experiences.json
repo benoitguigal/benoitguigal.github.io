@@ -8,44 +8,63 @@
     "end_date": "2018-11-30",
     "links": [
       {
-        "text": "Entrepreneur d'Intérêt Général, défi Hopkins",
+        "text": "Site web Entrepreneur d'Intérêt Général",
+        "href": "https://entrepreneur-interet-general.etalab.gouv.fr"
+      },
+      {
+        "text": "Présentation du défi Hopkins",
         "href": "https://entrepreneur-interet-general.etalab.gouv.fr/defis/2018/hopkins.html"
       },
       {
-        "text": "Graph Explorer Github page",
-        "href": "https://github.com/entrepreneur-interet-general/graph-explorer"
+        "text": "Hopkins, 10 mois après (vidéo)",
+        "href": "https://www.dailymotion.com/video/x6y2cs5"
       },
       {
-        "text": "Force directed graph with smooth transitions",
-        "href": "https://bl.ocks.org/benoitguigal/e11a791079318b7ff6ecde9a6464801d"
+        "text": "Github Graph Explorer",
+        "href": "https://github.com/entrepreneur-interet-general/graph-explorer"
       }
     ],
     "tags": [
+      "design thinking",
+      "project management",
+      "python",
       "elasticsearch",
-      "JanusGraph"
+      "janusgraph",
+      "entity resolution",
+      "networkx",
+      "vue.js",
+      "d3.js"
     ]
   },
   {
     "name": "figure",
-    "title": "Co-founder and CTO",
+    "title": "Co-fondateur et CTO",
     "company": "Figure",
     "start_date": "2014-11-01",
     "end_date": "2018-01-01",
     "links": [
       {
-        "text": "Instagram Figure",
-        "href": "https://www.instagram.com/figuredevices/"
-      },
-      {
-        "text": "Figure website",
+        "text": "Site web",
         "href": "https://figure.co/"
       },
       {
-        "text": "Github of the company",
+        "text": "Instagram",
+        "href": "https://www.instagram.com/figuredevices/"
+      },
+      {
+        "text": "Github",
         "href": "https://github.com/Postcard"
       }
     ],
-    "tags": ["photography", "embedded development", "raspberry pi"]
+    "tags": [
+      "entrepreneuriat",
+      "photographie",
+      "python",
+      "django",
+      "logiciel embarqué",
+      "électronique",
+      "reactjs"
+    ]
   },
   {
     "name": "captain_dash",
@@ -55,11 +74,17 @@
     "end_date": "2014-10-01",
     "links": [
       {
-        "text": "Captain Dash website",
+        "text": "Site web",
         "href": "http://www.captaindash.net/"
       }
     ],
-    "tags": ["Scala", "Data visualization"]
+    "tags": [
+      "business intelligence",
+      "OLAP",
+      "scala",
+      "data visualisation",
+      "aws"
+    ]
 
   }
 ]

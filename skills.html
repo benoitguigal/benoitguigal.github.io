@@ -1,0 +1,49 @@
+---
+title: skills
+layout: default
+---
+
+<div id="skills" class="container is-centered">
+  <nav id="skill-menu" class="level is-mobile">
+    <div class="level-left">
+      <a id="hard-skills" class="level-item has-text-weight-bold menu-item">
+        Programmation
+      </a>
+      <div class="level-item">|</div>
+      <a id="soft-skills" class="level-item menu-item">
+        Management & Communication
+      </a>
+    </div>
+  </nav>
+  <div id="hard-skills-content">
+    {% for skill in site.data.hard_skills %}
+    <p>
+      {{ skill }}
+    </p>
+    {% endfor %}
+  </div>
+  <div id="soft-skills-content" class="is-hidden">
+    {% for skill in site.data.soft_skills %}
+    <p>
+      {{ skill }}
+    </p>
+    {% endfor %}
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#hard-skills").click(function () {
+    $("#soft-skills-content").addClass("is-hidden");
+    $("#hard-skills-content").removeClass("is-hidden");
+
+    $("#soft-skills").removeClass("has-text-weight-bold");
+    $("#hard-skills").addClass("has-text-weight-bold");
+  });
+  $("#soft-skills").click(function () {
+    $("#hard-skills-content").addClass("is-hidden");
+    $("#soft-skills-content").removeClass("is-hidden");
+
+    $("#hard-skills").removeClass("has-text-weight-bold");
+    $("#soft-skills").addClass("has-text-weight-bold");
+  });
+</script>
