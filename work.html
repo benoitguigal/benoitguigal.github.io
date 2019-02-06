@@ -1,0 +1,10 @@
+---
+title: work
+layout: default
+---
+
+<div id="experiences" class="container">
+  {% for experience in site.data.experiences %}
+      {% include experience.html experience=experience %}
+  {% endfor %}
+</div>

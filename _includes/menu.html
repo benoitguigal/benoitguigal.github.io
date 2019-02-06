@@ -1,0 +1,28 @@
+
+<div id="menu">
+  <p>
+    {% if page.title == "about" %}
+    — <a href="/about" class="is-uppercase is-active">About</a>
+    {% else %}
+    — <a href="/about" class="is-uppercase">About</a>
+    {% endif %}
+  </p>
+  <p>
+    {% if page.title == "work" %}
+    — <a href="/work" class="is-uppercase is-active">Work</a>
+    {% else %}
+    — <a href="/work" class="is-uppercase">Work</a>
+    {% endif %}
+  </p>
+  <p>
+    — <a href="/blog" class="is-uppercase">Blog</a>
+  </p>
+  <p>
+    {% if page.title == "contact" %}
+    — <a href="/contact" class="is-uppercase is-active">Contact</a>
+    {% else %}
+    — <a href="/contact" class="is-uppercase">Contact</a>
+    {% endif %}
+  </p>
+</div>
+

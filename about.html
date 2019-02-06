@@ -1,0 +1,79 @@
+---
+title: about
+layout: default
+---
+
+<div id="about" class="container">
+  <p>
+    I am a software developer with seven years experience in web development and data science.
+  </p>
+  <nav id="skill-menu" class="level is-mobile">
+    <div class="level-left">
+      <a id="hard-skills" class="level-item has-text-weight-bold menu-item">
+        Hard skills
+      </a>
+      <div class="level-item">|</div>
+      <a id="soft-skills" class="level-item menu-item">
+        Soft skills
+      </a>
+      <div class="level-item">|</div>
+      <a id="interests" class="level-item menu-item">
+        Interests
+      </a>
+    </div>
+  </nav>
+  <div id="hard-skills-content">
+    {% for skill in site.data.hard_skills %}
+    <p>
+      {{ skill }}
+    </p>
+    {% endfor %}
+  </div>
+  <div id="soft-skills-content" class="is-hidden">
+    {% for skill in site.data.soft_skills %}
+    <p>
+      {{ skill }}
+    </p>
+    {% endfor %}
+  </div>
+  <div id="interests-content" class="is-hidden">
+    {% for skill in site.data.interests %}
+    <p>
+      {{ skill }}
+    </p>
+    {% endfor %}
+  </div>
+  <div id="curriculum">
+    Download my CV <a href="/assets/CV_GUIGAL.pdf">here</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#hard-skills").click(function () {
+    $("#soft-skills-content").addClass("is-hidden");
+    $("#interests-content").addClass("is-hidden");
+    $("#hard-skills-content").removeClass("is-hidden");
+
+    $("#soft-skills").removeClass("has-text-weight-bold");
+    $("#interests").removeClass("has-text-weight-bold");
+    $("#hard-skills").addClass("has-text-weight-bold");
+  });
+  $("#soft-skills").click(function () {
+    $("#hard-skills-content").addClass("is-hidden");
+    $("#interests-content").addClass("is-hidden");
+    $("#soft-skills-content").removeClass("is-hidden");
+
+    $("#hard-skills").removeClass("has-text-weight-bold");
+    $("#interests").removeClass("has-text-weight-bold");
+    $("#soft-skills").addClass("has-text-weight-bold");
+  });
+  $("#interests").click(function () {
+    $("#hard-skills-content").addClass("is-hidden");
+    $("#soft-skills-content").addClass("is-hidden");
+    $("#interests-content").removeClass("is-hidden");
+
+    $("#hard-skills").removeClass("has-text-weight-bold");
+    $("#soft-skills").removeClass("has-text-weight-bold");
+    $("#interests").addClass("has-text-weight-bold");
+  });
+</script>

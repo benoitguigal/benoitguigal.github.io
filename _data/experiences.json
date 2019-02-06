@@ -1,0 +1,65 @@
+[
+  {
+    "name": "entrepreneur_interet_general",
+    "title": "Entrepreneur d'Intérêt Général",
+    "company": "Ministère de l'Économie",
+    "description_name": "entrepreneur_interet_general",
+    "start_date": "2018-01-01",
+    "end_date": "2018-11-30",
+    "links": [
+      {
+        "text": "Entrepreneur d'Intérêt Général, défi Hopkins",
+        "href": "https://entrepreneur-interet-general.etalab.gouv.fr/defis/2018/hopkins.html"
+      },
+      {
+        "text": "Graph Explorer Github page",
+        "href": "https://github.com/entrepreneur-interet-general/graph-explorer"
+      },
+      {
+        "text": "Force directed graph with smooth transitions",
+        "href": "https://bl.ocks.org/benoitguigal/e11a791079318b7ff6ecde9a6464801d"
+      }
+    ],
+    "tags": [
+      "elasticsearch",
+      "JanusGraph"
+    ]
+  },
+  {
+    "name": "figure",
+    "title": "Co-founder and CTO",
+    "company": "Figure",
+    "start_date": "2014-11-01",
+    "end_date": "2018-01-01",
+    "links": [
+      {
+        "text": "Instagram Figure",
+        "href": "https://www.instagram.com/figuredevices/"
+      },
+      {
+        "text": "Figure website",
+        "href": "https://figure.co/"
+      },
+      {
+        "text": "Github of the company",
+        "href": "https://github.com/Postcard"
+      }
+    ],
+    "tags": ["photography", "embedded development", "raspberry pi"]
+  },
+  {
+    "name": "captain_dash",
+    "title": "Data engineer",
+    "company": "Captain Dash",
+    "start_date": "2012-09-01",
+    "end_date": "2014-10-01",
+    "links": [
+      {
+        "text": "Captain Dash website",
+        "href": "http://www.captaindash.net/"
+      }
+    ],
+    "tags": ["Scala", "Data visualization"]
+
+  }
+]

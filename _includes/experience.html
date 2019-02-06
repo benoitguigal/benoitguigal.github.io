@@ -1,0 +1,63 @@
+<div id=experience-{{include.experience.name}} class="experience">
+  <div id="experience-header-{{include.experience.name}}" class="level is-mobile">
+    <div class="level-left">
+      <div class="level-item">
+        <div>
+          <div class="is-size-5">
+            {{ include.experience.title }}
+          </div>
+          <div>
+            {{ include.experience.company }}
+          </div>
+          <div class="has-text-grey">
+            {{ include.experience.start_date | date: "%b %Y"}} - {{ include.experience.end_date | date: "%b %Y" }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+        <span class="icon">
+          <i id="icon-{{include.experience.name}}" class="fas fa-angle-down"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="experience-details-{{include.experience.name}}" class="is-hidden">
+    <div class="description">
+      {% assign description = site.experiences | where:"name", include.experience.name | first %}
+      {{ description }}
+    </div>
+    <div>
+      {% for picture in include.experience.pictures %}
+      <img src=/assets/images/{{ picture.name }}>
+      {% endfor %}
+    </div>
+    <div class="links">
+      {% for link in include.experience.links %}
+      <p>
+        <a href="{{link.href}}">{{ link.text }}</a>
+      </p>
+      {% endfor %}
+    </div>
+    <div class="tags">
+      {% for tag in include.experience.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#experience-{{include.experience.name}}").click(function (event) {
+    if ($(event.target).closest('a').length) {
+      return;
+    }
+    var experienceDetails = $("#experience-details-{{include.experience.name}}");
+    if (experienceDetails.hasClass("is-hidden")) {
+      experienceDetails.removeClass("is-hidden");
+    } else {
+      experienceDetails.addClass("is-hidden");
+    }
+  })
+</script>

@@ -1,0 +1,131 @@
+---
+---
+
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+$text : black;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Inconsolata', monospace;
+
+@import 'bulma.sass';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: black;
+  }
+
+  a:not(#title) {
+    text-decoration: underline;
+  }
+
+  a:hover:not(#title) {
+    color: #e74c3c;
+  }
+
+}
+
+#home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+  background: url('/assets/images/maroc_500W.png') center center no-repeat;
+}
+
+#home:hover {
+  background: url('/assets/images/georgie_500W.png') center center no-repeat;
+}
+
+#title-container {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#menu {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 1.3em;
+}
+
+
+#about {
+
+  max-width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  #skill-menu {
+    margin-top: 20px;
+  }
+
+  .menu-item {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #curriculum {
+    margin-top: 50px;
+  }
+}
+
+#experiences {
+  max-width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  .experience {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    .level {
+      margin-bottom: 0;
+    }
+
+    .description {
+      margin-top: 20px;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .tags {
+      margin-top: 20px;
+    }
+  }
+
+  .experience:not(:last-of-type) {
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+  }
+
+  img {
+    height: 150px;
+    width: auto;
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+#menu .is-active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact {
+  max-width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
