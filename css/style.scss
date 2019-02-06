@@ -26,7 +26,7 @@ body {
   }
 
   a:hover:not(#title) {
-    color: #e74c3c;
+    color: #1abc9c;
   }
 
 }
@@ -55,15 +55,16 @@ body {
   margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 40px;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 
 
 #about {
 
   max-width: 700px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 
   #skill-menu {
     margin-top: 20px;
@@ -81,8 +82,8 @@ body {
 
 #experiences {
   max-width: 700px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   .experience {
     padding-bottom: 20px;
@@ -126,6 +127,6 @@ body {
 
 #contact {
   max-width: 700px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
