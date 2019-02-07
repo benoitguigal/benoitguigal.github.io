@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
-<html lang=fr prefix="schema: http://schema.org/ og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article# bibo: http://purl.org/ontology/bibo/ sioc: http://rdfs.org/sioc/ns#"
-  resource="/" typeof="schema:WebPage">
+<html lang=fr>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47110116-3"></script>
@@ -28,6 +27,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "url": "https://benoitguigal.fr",
+        "mainEntityOfPage": "https://benoitguigal.fr",
+        "description": "Benoît Guigal – Développeur et Data Engineer",
+        "birthDate": "1989-02-26",
+        "image": "https://benoitguigal.fr/assets/image/benoit.png",
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Annonay",
+          "url": "https://www.wikidata.org/wiki/Q238366"
+        },
+        "gender": "http://schema.org/Male",
+        "jobTitle": "Développeur et data engineer",
+        "knowsAbout": [],
+        "nationality": {
+          "@type": "Country",
+          "name": "France",
+          "url": "https://www.wikidata.org/wiki/Q142"
+        },
+        "email": "benoit.guigal@protonmail.com"
+      }
+    </script>
   </head>
   <body>
     {% include title.html %}
