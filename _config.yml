@@ -1,2 +1,5 @@
+url: "https://benoitguigal.fr"
+plugins:
+  - jekyll-sitemap
 collections:
   - experiences
